@@ -1,0 +1,36 @@
+﻿@model CarViewModel
+
+@{
+    <h1>Are you sure you want to delete this car?</h1>
+}
+
+<h2 class="text-center">@ViewBag.Title</h2>
+<hr />
+
+<div class="mb-3">
+    <form asp-action="DeleteCarConfirmed" method="post">
+         <input type="hidden" asp-for="@Model.Id" />
+        <div class="mb-3">
+            <label asp-for="@Model.Brand" class="form-label-add-edit">Brand: </label>
+            <input asp-for="@Model.Brand" class="form-control" aria-required="true" />
+            <span asp-validation-for="@Model.Brand" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="@Model.Color" class="form-label-add-edit">Color: </label>
+            <textarea asp-for="@Model.Color" class="form-control" aria-required="true" ></textarea>
+            <span asp-validation-for="@Model.Color" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="@Model.RegistrationNumber" class="form-label-add-edit">Registration Number: </label>
+            <input asp-for="@Model.RegistrationNumber" class="form-control" aria-required="true" />
+            <span asp-validation-for="@Model.RegistrationNumber" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+           <button type="submit" class="btn btn-warning mb-2 w-100 p-3 fw-bold">Delete</button>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+}

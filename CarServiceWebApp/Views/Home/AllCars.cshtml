@@ -1,0 +1,30 @@
+﻿@model List<CarViewModel>
+
+@{
+    ViewBag.Title = "All Cars";
+}
+
+    <h2 class="text-center">@ViewBag.Title</h2>
+    <hr />
+
+    <div class="text-center row">
+    @foreach (var e in Model)
+    {
+                                        <input type="hidden" asp-for="@e.Id" />
+                                        <div class="card col-4" style="width: 20rem; ">
+                                        <div class="card-body">
+                                        <h5 class="card-title mt-1">@e.Brand</h5>
+                                        <p class="mb-0"><span class="fw-bold">Color: </span>@e.Color</p>
+                                        <p class="mb-0"><span class="fw-bold">Registration: </span>@e.RegistrationNumber</p>
+                                        </div>
+
+                                       <a asp-controller="CarService" asp-action="EditCar" asp-route-id="@e.Id" class="btn btn-warning mb-2 w-100 p-3 fw-bold">Edit</a>
+                                       <a asp-controller="CarService" asp-action="DeleteCar" asp-route-id="@e.Id" class="btn btn-warning mb-2 w-100 p-3 fw-bold">Remove</a>
+                                        </div>
+    }
+    </div>
+
+
+@section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+}
