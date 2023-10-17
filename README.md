@@ -18,7 +18,7 @@ Backend: ASP.NET CORE.
 Database: SQL Server.
 Frontend: MVC проектът е разработен с помощта на ASP.NET Core MVC.
 
-![CarService](images/Github.jpg)
+![unnamed](https://static.vecteezy.com/system/resources/previews/011/864/185/original/car-service-logo-design-illustration-car-repair-logo-vector.jpg)
 
 
     
