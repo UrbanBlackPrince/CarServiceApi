@@ -17,7 +17,8 @@ Car Service API представлява RESTful уеб услуга, която
 Backend: ASP.NET CORE.
 Database: SQL Server.
 Frontend: MVC проектът е разработен с помощта на ASP.NET Core MVC.
-![CarService](C:\Users\Gabriel Nikolov\Desktop\Projects\CarService RestApi\CarServiceWebApp\wwwroot\img\car-service-home.jpg)
+
+![CarService](C:\Users\Gabriel Nikolov\Pictures\Github.jpg)
 
 
     
