@@ -1,4 +1,5 @@
 Car Service API & MVC Project
+
 Описание:
 
 Car Service API представлява RESTful уеб услуга, която предоставя функционалност за управление на автомобилни услуги. С помощта на това API, потребителите могат да добавят, променят, търсят и изтриват информация за различни автомобилни услуги.
@@ -16,5 +17,7 @@ Car Service API представлява RESTful уеб услуга, която
 Backend: ASP.NET CORE.
 Database: SQL Server.
 Frontend: MVC проектът е разработен с помощта на ASP.NET Core MVC.
+![CarService](C:\Users\Gabriel Nikolov\Desktop\Projects\CarService RestApi\CarServiceWebApp\wwwroot\img\car-service-home.jpg)
+
 
     
