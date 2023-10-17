@@ -9,7 +9,7 @@ namespace CarServiceWebApp.Models
 
 
        [Required]
-        public string Brand { get; set; } = null!;
+        public string Brand { get; set; } = null!; 
 
 
         [Required]
